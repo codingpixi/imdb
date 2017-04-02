@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Hello World</title>
+    <style>
+      body {
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>In Theatres</h1>
+    <div class="handlebars-demo"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+
+    <script id="movieListing-template" type="text/x-handlebars-template">
+      <div class="entry">
+        <h3>New Movies</h3>
+        <h1>In Theatres</h1>
+        <div class="body">
+          <img src="{{poster_path}}"/>
+          <strong>{{title}}</strong>
+          <em>{{followers}} followers</em>
+          <em>Genre: {{genere_ids}}</em>
+          <strong>Release: {{release_date}}</strong>
+          <p><strong>Overview</strong> <br>{{overview}}</p>
+        </div>
+      </div>
+    </script>
+
+
+
+
+    <script src="api_key.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+
+</html>
