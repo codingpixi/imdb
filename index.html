@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8"/>
-    <title>Hello World</title>
-    <style>
-      body {
-        width: 80%;
-        margin: 0 auto;
-      }
-    </style>
-  </head>
-  <body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>3.4: TIYMD</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
     <h3>Movies In</h3>
     <h1>In Theatres</h1>
     <div class="handlebars-demo"></div>
@@ -18,16 +15,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
 
     <script id="movieListing-template" type="text/x-handlebars-template">
-      <div class="entry">
-        <div class="body">
-          <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}"/>
-          <strong>{{title}}</strong>
-          <em>{{followers}} followers</em>
-          <em>Genre: {{genere_ids}}</em>
-          <strong>Release: {{release_date}}</strong>
-          <p><strong>Overview</strong> <br>{{overview}}</p>
-        </div>
-      </div>
+        <!-- <div class="entry"> -->
+            <div class="body">
+                <div class="container">
+                    <div class="left">
+                        <img src="https://image.tmdb.org/t/p/w500/{{poster_path}}" />
+                    </div>
+                    <div class="right">
+                        <h2>{{title}}</h2>
+                        <em>Genre {{genere_ids}}</em>
+                        <em>Release: {{release_date}}</em><br>
+                        <em>Runtime: {{runtime}} minutes</em><br>
+                        <em>Rating: {{vote_average}}</em>
+                        <p><strong>Overview</strong> <br>{{overview}}</p>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
     </script>
 
 
@@ -36,6 +40,6 @@
     <script src="api_key.js"></script>
     <script src="main.js"></script>
 
-  </body>
+</body>
 
 </html>

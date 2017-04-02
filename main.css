@@ -1,3 +1,33 @@
 h3 {
-  color: blue;
+    color: blue;
+    margin-bottom: 0px;
+}
+
+img {
+  height: 344px;
+}
+
+.container {
+    align-items: center;
+    height: 350px;
+    width: 95%;
+    display: flex;
+    background-color: #f6f6f5;
+    margin-bottom: 1rem;
+}
+
+article {
+  height: auto;
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  margin-left: 50px;
+}
+
+.right {
+  /*display: flex;*/
+  /*margin:  150px 0px;*/
+  margin-left: 50px;
 }
